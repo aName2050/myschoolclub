@@ -1,15 +1,17 @@
 import React from 'react';
-import SignIn from '@/components/SignIn';
+import Head from 'next/head';
+
+// components
+import Navbar from '@/components/home/navbar';
 
 const Home: React.FC = () => {
 	return (
-		<div>
-			<h1>Welcome to MySchoolClub</h1>
-			<p>
-				The best app for managing clubs, boards, and events in school.
-			</p>
-			<SignIn />
-		</div>
+		<>
+			<Head>
+				<title>mySchoolClub</title>
+			</Head>
+			<Navbar></Navbar>
+		</>
 	);
 };
 
