@@ -1,0 +1,22 @@
+.landingImage {
+	margin: 10px;
+}
+
+.landingText {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.landingText {
+	font-size: 25px;
+}
+
+.largeUnderline {
+	text-decoration: underline;
+	font-size: 75px;
+}
+
+.largeText {
+	font-size: 75px;
+}

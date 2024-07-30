@@ -2,15 +2,31 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #111111;
-	box-sizing: border-box;
+	background-color: var(--background);
+	color: var(--text);
 }
 
-p {
-	font-size: 18px;
+footer {
+	padding: 10px;
+	background-color: #333;
 }
 
-h1 {
-	font-size: 36px;
-	color: #ff6600;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: rgb(255, 255, 255);
+		--background: rgb(33, 33, 33);
+		--primay: rgb(102, 5, 5);
+		--secondary: rgb(20, 35, 136);
+		--accent: rgb(255, 144, 0);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--text: rgb(5, 0, 0);
+		--background: rgb(222, 222, 222);
+		--primay: rgb(133, 0, 0);
+		--secondary: rgb(49, 62, 144);
+		--accent: rgb(255, 145, 0);
+	}
 }
