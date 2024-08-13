@@ -4,6 +4,7 @@ import styles from '../styles/home.module.css';
 
 // components
 import Navbar from '@/components/home/navbar';
+import Image from 'next/image';
 
 const Home: React.FC = () => {
 	return (
@@ -13,10 +14,15 @@ const Home: React.FC = () => {
 			</Head>
 			<Navbar></Navbar>
 			<div className={styles.mainContent}>
-				<img
+				<Image
 					className={styles.landingImage}
 					src="https://placehold.co/600x800"
 					alt="placeholder image"
+					priority={true}
+					sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+					layout="responsive"
+					width={600}
+					height={800}
 				/>
 				<div className={styles.landingText}>
 					<h1 className={styles.landingTitle}>
