@@ -20,7 +20,6 @@ const Home: React.FC = () => {
 					alt="placeholder image"
 					priority={true}
 					sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-					layout="responsive"
 					width={600}
 					height={800}
 				/>
