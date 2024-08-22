@@ -22,6 +22,7 @@
 
 .logo {
 	padding: 2px;
+	margin-left: 5px;
 }
 
 .logoLink {
@@ -38,6 +39,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-right: 5px;
 }
 
 .navlinks li {
@@ -46,6 +48,12 @@
 
 .link {
 	text-decoration: none;
+	color: var(--primary);
+	transition: 0.2s ease;
+}
+
+.link:hover {
+	color: var(--accent);
 }
 
 .hamburger {
@@ -60,22 +68,11 @@
 .hamburger .line {
 	width: 100%;
 	height: 3px;
-	background-color: black;
 	border-radius: 20px;
-}
 
-.mainContent {
-	display: inline;
-}
+	background-color: white;
 
-.landingImage {
-	display: inline;
-	width: 10px;
-	height: auto;
-}
-
-.landingText {
-	display: inline;
+	border: 1px red solid;
 }
 
 @media screen and (max-width: 500px) {

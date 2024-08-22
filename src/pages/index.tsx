@@ -5,6 +5,7 @@ import styles from '../styles/home.module.css';
 // components
 import Navbar from '@/components/home/navbar';
 import Image from 'next/image';
+import Footer from '@/components/home/footer';
 
 const Home: React.FC = () => {
 	return (
@@ -14,36 +15,18 @@ const Home: React.FC = () => {
 			</Head>
 			<Navbar></Navbar>
 			<div className={styles.mainContent}>
-				<Image
-					className={styles.landingImage}
-					src="https://placehold.co/600x800"
-					alt="placeholder image"
-					priority={true}
-					sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-					width={600}
-					height={800}
-				/>
-				<div className={styles.landingText}>
-					<h1 className={styles.landingTitle}>
-						THE{' '}
-						<span className={styles.largeUnderline}>PERFECT</span>
-						<br />
-						<span className={styles.largeText}>MANAGEMENT</span>
-						<br />
-						APP FOR CLUBS
-					</h1>
-				</div>
+				<h1 className={styles.landingTitle}>
+					THE <span className={styles.largeUnderline}>PERFECT</span>
+					<br />
+					<span className={styles.largeText}>MANAGEMENT</span>
+					<br />
+					APP FOR CLUBS
+				</h1>
 			</div>
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<footer>
-				<p>&copy; 2024 mySchoolClub</p>
-			</footer>
+			<Footer></Footer>
 		</>
 	);
 };

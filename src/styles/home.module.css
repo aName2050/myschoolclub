@@ -1,22 +1,29 @@
-.landingImage {
-	margin: 10px;
-}
-
-.landingText {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.landingText {
-	font-size: 25px;
-}
-
 .largeUnderline {
 	text-decoration: underline;
-	font-size: 75px;
+	font-size: 2em;
 }
 
 .largeText {
-	font-size: 75px;
+	font-size: 2em;
+}
+
+.landingTitle {
+	display: inline;
+	right: 0;
+
+	border: 1px red solid;
+}
+
+@media screen and (max-width: 500px) {
+	.landingTitle {
+		font-size: 0.5em;
+	}
+
+	.largeUnderline {
+		font-size: 1em;
+	}
+
+	.largeText {
+		font-size: 1em;
+	}
 }
