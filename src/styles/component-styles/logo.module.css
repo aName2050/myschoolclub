@@ -1,0 +1,15 @@
+.logo {
+	padding: 2px;
+	margin-left: 5px;
+	font-size: 1.2em;
+}
+
+.logoLink {
+	color: var(--text-900);
+	transition: color 0.3s ease;
+	text-decoration: none;
+}
+
+.logoLink:hover {
+	color: var(--accent-900);
+}

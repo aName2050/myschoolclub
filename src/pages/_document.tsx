@@ -14,6 +14,7 @@ class mySchoolClubDocument extends Document {
 						content="high school, club, management"
 					/>
 					<meta name="author" content="Bardia Shafaee" />
+					<meta name="author" content="Compacted Software" />
 				</Head>
 				<body>
 					<Main />

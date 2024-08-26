@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../../styles/navbar.module.css';
+import styles from '@/styles/component-styles/footer.module.css';
 
 const Footer: React.FC = () => {
 	return (
-		<footer>
+		<footer className={styles.footer}>
 			<p>&copy; 2024 mySchoolClub</p>
 		</footer>
 	);

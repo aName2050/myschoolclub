@@ -16,22 +16,8 @@
 }
 
 .navbar.scrolled {
-	background-color: rgba(33, 33, 33, 0.7);
+	background-color: var(--navbar-bg);
 	backdrop-filter: blur(15px);
-}
-
-.logo {
-	padding: 2px;
-	margin-left: 5px;
-}
-
-.logoLink {
-	color: var(--text);
-	transition: color 0.3s ease;
-}
-
-.logoLink:hover {
-	color: var(--accent);
 }
 
 .navlinks {
@@ -48,12 +34,12 @@
 
 .link {
 	text-decoration: none;
-	color: var(--primary);
+	color: var(--primary-400);
 	transition: 0.2s ease;
 }
 
 .link:hover {
-	color: var(--accent);
+	color: var(--accent-500);
 }
 
 .hamburger {

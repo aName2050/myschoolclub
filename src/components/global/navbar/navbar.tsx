@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '../../styles/navbar.module.css';
+import styles from '@/styles/component-styles/navbar.module.css';
+
+// components
+import Logo from '@/components/global/logo';
+import Hamburger from '@/components/global/navbar/hamburger';
 
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,23 +29,9 @@ const Navbar: React.FC = () => {
 
 	return (
 		<nav className={styles.navbar}>
-			<div className={styles.logo}>
-				{/* TODO: replace with logo */}
-				<h1>
-					<Link
-						className={`${styles.link} ${styles.logoLink}`}
-						href="/"
-					>
-						mySchoolClub
-					</Link>
-				</h1>
-			</div>
+			<Logo></Logo>
 			<div className={styles.dynamicMenu}>
-				<div className={styles.hamburger}>
-					<div className={styles.line}></div>
-					<div className={styles.line}></div>
-					<div className={styles.line}></div>
-				</div>
+				<Hamburger></Hamburger>
 				<ul className={styles.navlinks}>
 					<li>
 						<Link className={styles.link} href="/">
