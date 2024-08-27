@@ -1,5 +1,5 @@
 interface IButtonProps {
-	text: string;
+	label: string;
 	onClick: () => void;
 	disabled?: boolean;
 	className?: string;

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '@/styles/component-styles/button.module.css';
 
 const Button: React.FC<IButtonProps> = ({
-	text,
+	label,
 	onClick,
 	disabled = false,
 	className = '',
@@ -15,7 +15,7 @@ const Button: React.FC<IButtonProps> = ({
 				disabled ? 'styles.buttonDisabled' : ''
 			} ${className}`}
 		>
-			{text}
+			{label}
 		</button>
 	);
 };

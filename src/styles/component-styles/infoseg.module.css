@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin: 20px;
+
+	border: 1px solid red;
+}
+
+.image {
+	position: relative;
+	display: inline;
+	right: 1px;
+
+	border: 1px solid green;
+}
+
+.text {
+	position: relative;
+	display: inline;
+	left: 1px;
+
+	border: 1px solid blue;
+}
