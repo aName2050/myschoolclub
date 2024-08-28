@@ -11,7 +11,7 @@
 .image {
 	position: relative;
 	display: inline;
-	right: 1px;
+	padding: 20px;
 
 	border: 1px solid green;
 }
@@ -19,7 +19,8 @@
 .text {
 	position: relative;
 	display: inline;
-	left: 1px;
+	padding: 20px;
+	margin: 50px;
 
 	border: 1px solid blue;
 }

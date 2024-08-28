@@ -20,7 +20,20 @@ const Home: React.FC = () => {
 			<Navbar />
 			<Banner />
 			<br />
-			<InfoSeg imagePos="left" />
+			<InfoSeg
+				imagePos="left"
+				imageSrc="https://static-00.iconduck.com/assets.00/qr-code-illustration-2048x1668-wseobvx0.png"
+				imageAlt="hand holding phone with QR code"
+				imageSize={{ width: 500, height: 450 }}
+			/>
+			<br />
+			<InfoSeg
+				imagePos="right"
+				imageSrc=""
+				imageAlt="no image"
+				imageSize={{ width: 300, height: 200 }}
+			/>
+			<br />
 			<br />
 			<Footer />
 		</>

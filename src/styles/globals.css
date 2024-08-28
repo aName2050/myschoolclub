@@ -8,6 +8,7 @@ body {
 /* scroll bar */
 ::-webkit-scrollbar {
 	width: 20px;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -43,6 +44,7 @@ html {
 		--text-600: #666666;
 		--text-700: #4d4d4d;
 		--text-800: #333333;
+		--text-850: #222222;
 		--text-900: #1a1a1a;
 		--text-950: #0d0d0d;
 
@@ -95,7 +97,7 @@ html {
 		--accent-950: #180202;
 
 		/* special */
-		--navbar-bg: #ccccccb3;
+		--navbar-bg: #e6e6e6b3;
 	}
 }
 @media (prefers-color-scheme: dark) {
@@ -109,6 +111,7 @@ html {
 		--text-600: #999999;
 		--text-700: #b3b3b3;
 		--text-800: #cccccc;
+		--text-850: #dddddd;
 		--text-900: #e6e6e6;
 		--text-950: #f2f2f2;
 
@@ -162,6 +165,6 @@ html {
 		--accent-950: #fde7e7;
 
 		/* special */
-		--navbar-bg: #333333b3;
+		--navbar-bg: #1a1a1ab3;
 	}
 }

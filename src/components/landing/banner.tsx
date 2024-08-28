@@ -11,7 +11,8 @@ const Banner: React.FC = () => {
 				</h2>
 				<p className={styles.paragraph}>
 					Tired of having to make a new sign-up form every year?
-					Communicating with members? Planning events?
+					Communicating with members? Planning events? Scheduling
+					meetings? Keeping track of board and club members?
 				</p>
 				<p className={styles.paragraph}>
 					Because we have a solution for that.
