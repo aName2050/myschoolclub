@@ -3,4 +3,5 @@ interface ISegInfo {
 	imageSrc: string;
 	imageAlt: string;
 	imageSize: { width: number; height: number };
+	children: any;
 }

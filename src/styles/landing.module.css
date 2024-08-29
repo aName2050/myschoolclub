@@ -1,1 +1,11 @@
+.header {
+	color: var(--text-900);
+	font-size: 2rem;
+	text-align: center;
+}
 
+.subheader {
+	color: var(--text-700);
+	font-size: 1rem;
+	text-align: center;
+}

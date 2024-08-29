@@ -29,6 +29,8 @@ body {
 html {
 	scrollbar-width: 20px;
 	scrollbar-color: var(--primary-900) #00000000;
+
+	scroll-behavior: smooth;
 }
 
 /* color themes */

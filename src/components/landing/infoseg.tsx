@@ -7,6 +7,7 @@ const InfoSeg: React.FC<ISegInfo> = ({
 	imageSrc,
 	imageAlt,
 	imageSize,
+	children,
 }) => {
 	// TODO: finish
 	return (
@@ -21,23 +22,11 @@ const InfoSeg: React.FC<ISegInfo> = ({
 							alt={imageAlt}
 						/>
 					</div>
-					<div className={styles.text}>
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Voluptate adipisci perferendis eos inventore
-						consequuntur facilis sapiente consectetur porro amet
-						illum odit totam, mollitia consequatur labore
-						reprehenderit obcaecati reiciendis magnam iste?
-					</div>
+					<div className={styles.text}>{children}</div>
 				</>
 			) : (
 				<>
-					<div className={styles.text}>
-						Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Voluptate adipisci perferendis eos inventore
-						consequuntur facilis sapiente consectetur porro amet
-						illum odit totam, mollitia consequatur labore
-						reprehenderit obcaecati reiciendis magnam iste?
-					</div>
+					<div className={styles.text}>{children}</div>
 					<div className={styles.image}>image goes here</div>
 				</>
 			)}

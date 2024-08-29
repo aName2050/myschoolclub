@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from '@/styles/component-styles/banner.module.css';
+import Button from '@/components/global/button';
 
-const Banner: React.FC = () => {
+const Banner: React.FC<IBanner> = ({ includeCTA, jmpCTA }) => {
+	const btnCTA = () => {
+		if (jmpCTA) location.hash = jmpCTA;
+	};
+
 	return (
 		<div className={styles.banner}>
 			<div className={styles.content}>
@@ -17,6 +22,13 @@ const Banner: React.FC = () => {
 				<p className={styles.paragraph}>
 					Because we have a solution for that.
 				</p>
+				{includeCTA ? (
+					<div className={styles.CTA}>
+						<Button label="Learn more" onClick={btnCTA} />
+					</div>
+				) : (
+					<></>
+				)}
 			</div>
 		</div>
 	);

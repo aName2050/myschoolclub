@@ -4,16 +4,12 @@
 	align-items: center;
 	padding: 10px;
 	margin: 20px;
-
-	border: 1px solid red;
 }
 
 .image {
 	position: relative;
 	display: inline;
 	padding: 20px;
-
-	border: 1px solid green;
 }
 
 .text {
@@ -21,6 +17,4 @@
 	display: inline;
 	padding: 20px;
 	margin: 50px;
-
-	border: 1px solid blue;
 }

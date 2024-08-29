@@ -22,7 +22,6 @@ const Navbar: React.FC = () => {
 				navbar.classList.remove(styles.scrolled);
 			}
 		};
-
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
