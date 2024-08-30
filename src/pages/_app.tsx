@@ -2,7 +2,16 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
+import { useEffect } from 'react';
+
 function mySchoolClubApp({ Component, pageProps }: AppProps) {
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			const loader = document.getElementById('globalLoader');
+			if (loader) loader.remove();
+		}
+	}, []);
+
 	return (
 		<>
 			<Head>

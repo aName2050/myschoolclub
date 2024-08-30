@@ -1,9 +1,10 @@
 import React from 'react';
+import SignIn from '@/components/account/SignIn';
 import Head from 'next/head';
 import Navbar from '@/components/global/navbar/navbar';
 import Footer from '@/components/global/footer';
 
-const ManageAccount: React.FC = () => {
+const LogIn: React.FC = () => {
 	return (
 		<>
 			<Head>
@@ -12,7 +13,7 @@ const ManageAccount: React.FC = () => {
 			<Navbar />
 			<br />
 			<br />
-			<h1>Page under construction</h1>
+			<SignIn />
 			<br />
 			<br />
 			<Footer />
@@ -20,4 +21,4 @@ const ManageAccount: React.FC = () => {
 	);
 };
 
-export default ManageAccount;
+export default LogIn;

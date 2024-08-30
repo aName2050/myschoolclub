@@ -3,16 +3,16 @@ import Head from 'next/head';
 import Navbar from '@/components/global/navbar/navbar';
 import Footer from '@/components/global/footer';
 
-const ManageAccount: React.FC = () => {
+const Mission: React.FC = () => {
 	return (
 		<>
 			<Head>
-				<title>Authorize | mySchoolClub</title>
+				<title>Mission Statement | mySchoolClub</title>
 			</Head>
 			<Navbar />
 			<br />
 			<br />
-			<h1>Page under construction</h1>
+			<h1>Page under construction (our mission)</h1>
 			<br />
 			<br />
 			<Footer />
@@ -20,4 +20,4 @@ const ManageAccount: React.FC = () => {
 	);
 };
 
-export default ManageAccount;
+export default Mission;

@@ -11,10 +11,6 @@ import InfoSeg from '@/components/landing/infoseg';
 import styles from '@/styles/landing.module.css';
 
 const Home: React.FC = () => {
-	const handleButtonClick = () => {
-		alert('hello world!');
-	};
-
 	return (
 		<>
 			<Head>

@@ -25,7 +25,8 @@
 }
 
 .CTA {
-	margin-top: 325px;
+	position: relative;
+	top: 40vh;
 }
 
 .title {
