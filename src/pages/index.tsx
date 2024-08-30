@@ -37,6 +37,7 @@ const Home: React.FC = () => {
 				</h3>
 			</InfoSeg>
 			<br />
+			<br />
 			<InfoSeg
 				imagePos="right"
 				imageSrc=""
