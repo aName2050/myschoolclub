@@ -2,9 +2,10 @@ import React from 'react';
 import styles from '@/styles/component-styles/banner.module.css';
 import Button from '@/components/global/button';
 
-const Banner: React.FC<IBanner> = ({ includeCTA, jmpCTA }) => {
-	const btnCTA = () => {
-		if (jmpCTA) location.hash = jmpCTA;
+const Banner: React.FC = () => {
+	const scrollToContent = () => {
+		const content = document.getElementById('main');
+		if (content) content.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	return (
@@ -22,13 +23,9 @@ const Banner: React.FC<IBanner> = ({ includeCTA, jmpCTA }) => {
 				<p className={styles.paragraph}>
 					Because we have a solution for that.
 				</p>
-				{includeCTA ? (
-					<div className={styles.CTA}>
-						<Button label="Learn more" onClick={btnCTA} />
-					</div>
-				) : (
-					<></>
-				)}
+				<div className={styles.CTA}>
+					<Button label="Learn more" onClick={scrollToContent} />
+				</div>
 			</div>
 		</div>
 	);

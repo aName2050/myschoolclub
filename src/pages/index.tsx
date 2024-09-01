@@ -17,8 +17,8 @@ const Home: React.FC = () => {
 				<title>mySchoolClub</title>
 			</Head>
 			<Navbar />
-			<Banner includeCTA={true} jmpCTA="#learnMore" />
-			<div id="learnMore"></div>
+			<Banner />
+			<div id="main"></div>
 			<br />
 			<br />
 			<InfoSeg
