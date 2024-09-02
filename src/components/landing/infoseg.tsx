@@ -27,7 +27,14 @@ const InfoSeg: React.FC<ISegInfo> = ({
 			) : (
 				<>
 					<div className={styles.text}>{children}</div>
-					<div className={styles.image}>image goes here</div>
+					<div className={styles.image}>
+						<Image
+							src={imageSrc}
+							width={imageSize.width}
+							height={imageSize.height}
+							alt={imageAlt}
+						/>
+					</div>
 				</>
 			)}
 		</div>

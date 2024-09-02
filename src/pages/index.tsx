@@ -9,8 +9,13 @@ import InfoSeg from '@/components/landing/infoseg';
 
 // styles
 import styles from '@/styles/landing.module.css';
+import Button from '@/components/global/button';
 
 const Home: React.FC = () => {
+	const getStartedBtn = () => {
+		location.pathname = '/account/auth';
+	};
+
 	return (
 		<>
 			<Head>
@@ -40,15 +45,28 @@ const Home: React.FC = () => {
 			<br />
 			<InfoSeg
 				imagePos="right"
-				imageSrc=""
-				imageAlt="no image"
-				imageSize={{ width: 300, height: 200 }}
+				imageSrc="https://static.vecteezy.com/system/resources/previews/021/468/870/original/man-thinks-holds-clipboard-pen-in-hands-png.png"
+				imageAlt="man holding clipboard"
+				imageSize={{ width: 400, height: 500 }}
 			>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-				nobis non deserunt voluptates harum aut, placeat reiciendis
-				ipsum iste facere sequi vero, iusto mollitia ipsa. Perferendis
-				eligendi rem numquam nam.
+				<h1 className={styles.header}>
+					Schedule meetings for your board and members with ease.
+				</h1>
+				<h2 className={styles.subheader}></h2>
 			</InfoSeg>
+			<br />
+			<br />
+			<br />
+			<h2 className={styles.header}>So what are you waiting for?</h2>
+			<br />
+			<div className={styles.btnContainer}>
+				<Button
+					label="Get started"
+					onClick={getStartedBtn}
+					className={styles.getStartedBtn}
+				/>
+			</div>
+			<br />
 			<br />
 			<br />
 			<Footer />

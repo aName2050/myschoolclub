@@ -9,3 +9,15 @@
 	font-size: 1rem;
 	text-align: center;
 }
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.getStartedBtn {
+	width: 10%;
+	height: 10%;
+	text-align: center;
+}

@@ -7,6 +7,18 @@
 	font-size: 16px;
 	cursor: pointer;
 	transition: 0.3s ease;
+	text-align: center;
+}
+
+.btnContent {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.btnText {
+	padding: 0;
+	margin: 0;
 }
 
 .button:hover {

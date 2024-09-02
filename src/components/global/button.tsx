@@ -15,7 +15,9 @@ const Button: React.FC<IButtonProps> = ({
 				disabled ? 'styles.buttonDisabled' : ''
 			} ${className}`}
 		>
-			{label}
+			<div className={styles.btnContent}>
+				<p className={styles.btnText}>{label}</p>
+			</div>
 		</button>
 	);
 };
